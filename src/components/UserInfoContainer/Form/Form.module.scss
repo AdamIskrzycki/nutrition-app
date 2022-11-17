@@ -1,0 +1,7 @@
+@import '../../mixins.scss';
+
+.FormContainer {
+    @include flexCenter(column);
+    border: 2px solid black;
+    row-gap: 20px;
+}

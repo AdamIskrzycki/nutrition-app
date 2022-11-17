@@ -1,0 +1,8 @@
+@import '../mixins.scss';
+
+.UserInfoContainer {
+    @include flexCenter(row);
+    column-gap: 200px;
+    margin: 100px auto;
+    width: 100%;
+}
