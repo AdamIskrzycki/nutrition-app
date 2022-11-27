@@ -52,7 +52,7 @@ const UserInfoContainer = () => {
         setSelectedActivityIndex(4);
         break;
       default:
-        console.log("default value");
+        break;
     }
   };
 

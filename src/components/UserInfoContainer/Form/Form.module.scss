@@ -2,6 +2,41 @@
 
 .FormContainer {
     @include flexCenter(column);
-    border: 2px solid black;
     row-gap: 20px;
+}
+
+.Info {
+    font-size: 26px;    
+}
+
+.NumberInput {
+    @include inputBeautify();
+    margin-left: 20px;
+    width: 150px;
+}
+
+.SelectInput {
+    @include inputBeautify();
+    width: 300px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.SelectInput option {
+    font-weight: bold;
+}
+
+.CalculateButton {
+    border: none;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+.CalculateButton:hover {
+    transform: scale(1.15); 
+    transition: transform 400ms ease;
 }

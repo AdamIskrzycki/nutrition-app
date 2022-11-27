@@ -4,7 +4,7 @@ import classes from "./Form.module.scss";
 const Form = (props) => {
   return (
     <div className={classes.FormContainer}>
-      <section>
+      <section className={classes.Info}>
         First, input the information necessary for proper measurements
       </section>
       <label>
@@ -38,20 +38,21 @@ const Form = (props) => {
           max="99"
           placeholder="range: 20-99"
           onChange={props.onAgeChange}
+          className={classes.NumberInput}
         />
       </div>
       <div>
-        <label for="height">Height (in cm): </label>
-        <input type="number" id="height" onChange={props.onHeightChange} />
+        <label for="height">Height: </label>
+        <input type="number" id="height" onChange={props.onHeightChange} className={classes.NumberInput} placeholder="(in cm)"/>
       </div>
       <div>
-        <label for="weight">Weight (in kg): </label>
-        <input type="number" id="weight" onChange={props.onWeightChange} />
+        <label for="weight">Weight: </label>
+        <input type="number" id="weight" onChange={props.onWeightChange} className={classes.NumberInput} placeholder="(in kg)"/>
       </div>
       <div>
         <label for="exercise">How active are you?</label>
         <br></br>
-        <select id="activity" onChange={() => props.onSelectOptionChange("activity")}>
+        <select className={classes.SelectInput} id="activity" onChange={() => props.onSelectOptionChange("activity")}>
           <option value="sedentary">Sedentary (little or no exercise)</option>
           <option value="lightlyActive">
             Lightly active (exercise 1-3 days/week)
@@ -65,7 +66,7 @@ const Form = (props) => {
           </option>
         </select>
       </div>
-      <button onClick={props.onCalculateClick}>Calculate</button>
+      <button className={classes.CalculateButton} onClick={props.onCalculateClick}>Calculate</button>
     </div>
   );
 };
