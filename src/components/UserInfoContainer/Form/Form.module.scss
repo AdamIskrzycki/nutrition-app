@@ -9,6 +9,13 @@
     font-size: 26px;    
 }
 
+.radioInput {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
 .NumberInput {
     @include inputBeautify();
     margin-left: 20px;
@@ -27,6 +34,7 @@
 }
 
 .CalculateButton {
+    margin-top: 30px;
     border: none;
     padding: 10px;
     background-color: #f2f2f2;
@@ -34,6 +42,9 @@
     font-family: inherit;
     font-weight: inherit;
     cursor: pointer;
+    -webkit-box-shadow: 10px 8px 18px -9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 10px 8px 18px -9px rgba(66, 68, 90, 1);
+    box-shadow: 10px 8px 18px -9px rgba(66, 68, 90, 1);    
 }
 
 .CalculateButton:hover {

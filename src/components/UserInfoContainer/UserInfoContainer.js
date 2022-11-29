@@ -12,6 +12,13 @@ const UserInfoContainer = () => {
   const [isUserResultsVisible, setIsUserResultsVisible] = useState(false);
   const [selectedActivityIndex, setSelectedActivityIndex] = useState(0);
   const [maintainCalorie, setMaintainCalorie] = useState(0);
+  const [isCalculateDisabled, setIsCalculateDisabled] = useState(true);
+
+  useEffect(() => {
+    if(gender === null || ageValue < 20 || ageValue > 99 || weightValue < 1 || heightValue < 1 || weightValue > 250 || heightValue > 250) {
+      setIsCalculateDisabled(true);
+    } else setIsCalculateDisabled(false)
+  }, [gender, ageValue, weightValue, heightValue])
 
   const onGenderChange = (event) => {
     setGender(event.target.value);
@@ -19,17 +26,14 @@ const UserInfoContainer = () => {
 
   const onAgeChange = (event) => {
     setAgeValue(event.target.value);
-    console.log("Age: ", ageValue);
   };
 
   const onHeightChange = (event) => {
     setHeightValue(event.target.value);
-    console.log("Height: ", heightValue);
   };
 
   const onWeightChange = (event) => {
     setWeightValue(event.target.value);
-    console.log("Weight: ", weightValue);
   };
 
   const checkActivitySelection = (id) => {
@@ -96,7 +100,7 @@ const UserInfoContainer = () => {
   const onCalculateClick = () => {
     setIsUserResultsVisible(true);
     setBmiValue((weightValue / Math.pow(heightValue / 100, 2)).toFixed(2));
-    setMaintainCalorie(calculateCalories(gender, weightValue, heightValue, ageValue, selectedActivityIndex).toFixed(2));
+    setMaintainCalorie(calculateCalories(gender, weightValue, heightValue, ageValue, selectedActivityIndex).toFixed());
   };
 
   return (
@@ -109,6 +113,7 @@ const UserInfoContainer = () => {
         onWeightChange={onWeightChange}
         onCalculateClick={onCalculateClick}
         onSelectOptionChange={checkActivitySelection}
+        isCalculateDisabled={isCalculateDisabled}
       />
       <UserResults bmi={bmiValue} isUserResultsVisible={isUserResultsVisible} maintainCalorie={maintainCalorie}/>
     </div>

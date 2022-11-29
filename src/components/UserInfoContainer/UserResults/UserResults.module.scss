@@ -1,0 +1,83 @@
+@import '../../mixins.scss';
+
+.UserResultsContainer {
+    @include flexCenter(column);
+}
+
+.BmiResult {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.BmiContainer {
+    margin-bottom: 50px;
+}
+
+.BmiChart {
+    @include flexCenter(row);
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+
+.BmiChartUnderweight {
+    font-size: 22px;
+    padding: 12px;
+    background-color: #F34E3D;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.BmiChartNormal {
+    font-size: 22px;
+    padding: 12px;
+    background-color: #60B64A;
+}
+
+
+.BmiChartOverweight {
+    font-size: 22px;
+    padding: 12px;
+    background-color: #E5F544;
+}
+
+
+.BmiChartObese {
+    font-size: 22px;
+    padding: 12px;
+    background-color: #F34E3D;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.CalorieIntakeContainer {
+    width: 85%;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: #BFEBC8;
+    -webkit-box-shadow: 10px 8px 18px -9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 10px 8px 18px -9px rgba(66, 68, 90, 1);
+    box-shadow: 10px 8px 18px -9px rgba(66, 68, 90, 1);    
+}
+
+.CalorieHeadline {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.MaintainWeight {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.LoseWeight {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.GainWeight {
+    font-size: 20px;
+    padding: 5px;
+}

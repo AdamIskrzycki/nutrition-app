@@ -15,6 +15,7 @@ const Form = (props) => {
           value="male"
           onChange={props.onGenderChange}
           checked={props.gender === "male"}
+          className={classes.radioInput}
         />
         Male
       </label>
@@ -26,6 +27,7 @@ const Form = (props) => {
           value="female"
           onChange={props.onGenderChange}
           checked={props.gender === "female"}
+          className={classes.radioInput}
         />
         Female
       </label>
@@ -43,16 +45,36 @@ const Form = (props) => {
       </div>
       <div>
         <label for="height">Height: </label>
-        <input type="number" id="height" onChange={props.onHeightChange} className={classes.NumberInput} placeholder="(in cm)"/>
+        <input
+          type="number"
+          min="0"
+          max="250"
+          id="height"
+          onChange={props.onHeightChange}
+          className={classes.NumberInput}
+          placeholder="(in cm)"
+        />
       </div>
       <div>
         <label for="weight">Weight: </label>
-        <input type="number" id="weight" onChange={props.onWeightChange} className={classes.NumberInput} placeholder="(in kg)"/>
+        <input
+          type="number"
+          id="weight"
+          min="0"
+          max="250"
+          onChange={props.onWeightChange}
+          className={classes.NumberInput}
+          placeholder="(in kg)"
+        />
       </div>
       <div>
         <label for="exercise">How active are you?</label>
         <br></br>
-        <select className={classes.SelectInput} id="activity" onChange={() => props.onSelectOptionChange("activity")}>
+        <select
+          className={classes.SelectInput}
+          id="activity"
+          onChange={() => props.onSelectOptionChange("activity")}
+        >
           <option value="sedentary">Sedentary (little or no exercise)</option>
           <option value="lightlyActive">
             Lightly active (exercise 1-3 days/week)
@@ -66,7 +88,13 @@ const Form = (props) => {
           </option>
         </select>
       </div>
-      <button className={classes.CalculateButton} onClick={props.onCalculateClick}>Calculate</button>
+      <button
+        disabled={props.isCalculateDisabled}
+        className={classes.CalculateButton}
+        onClick={props.onCalculateClick}
+      >
+        Calculate
+      </button>
     </div>
   );
 };
