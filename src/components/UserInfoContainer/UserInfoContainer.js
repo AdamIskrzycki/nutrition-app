@@ -104,7 +104,8 @@ const UserInfoContainer = () => {
   };
 
   return (
-    <div className={classes.UserInfoContainer}>
+    <>
+    <section className={classes.UserInfoContainer}>
       <Form
         gender={gender}
         onGenderChange={onGenderChange}
@@ -116,7 +117,9 @@ const UserInfoContainer = () => {
         isCalculateDisabled={isCalculateDisabled}
       />
       <UserResults bmi={bmiValue} isUserResultsVisible={isUserResultsVisible} maintainCalorie={maintainCalorie}/>
-    </div>
+    </section>
+    <div className={classes.SearchInvitation}>Search for different foods and drinks and discover their calorific values below!</div>
+    </>
   );
 };
 

@@ -1,0 +1,6 @@
+@import "../../mixins.scss";
+
+.Search {
+    @include inputBeautify();
+    width: 60%;
+}
