@@ -3,12 +3,6 @@
 .UserInfoContainer {
     @include flexCenter(row);
     column-gap: 200px;
-    margin: 130px auto;
+    margin: 70px auto;
     width: 100%;
-}
-
-.SearchInvitation {
-    font-size: 40px;
-    width: 100%;
-    margin-top: 190px;
 }

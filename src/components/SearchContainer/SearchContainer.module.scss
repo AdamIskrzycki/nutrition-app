@@ -1,0 +1,35 @@
+@import "../mixins.scss";
+
+.SearchContainer {
+    width: 100%;
+}
+
+.Search {
+    @include inputBeautify();
+    width: 45%;
+}
+
+.SearchInvitation {
+    font-size: 40px;
+    width: 100%;
+    margin-top: 190px;
+}
+
+.SearchInvitationSHL {
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+.SearchResultsContainer {
+    @include flexCenter(row);
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.SearchResult {
+    border-radius: 5px;
+    margin: 10px; 
+    border: 2px solid black;
+    padding: 20px;    
+}

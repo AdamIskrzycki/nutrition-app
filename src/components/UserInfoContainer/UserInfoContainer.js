@@ -118,7 +118,7 @@ const UserInfoContainer = () => {
       />
       <UserResults bmi={bmiValue} isUserResultsVisible={isUserResultsVisible} maintainCalorie={maintainCalorie}/>
     </section>
-    <div className={classes.SearchInvitation}>Search for different foods and drinks and discover their calorific values below!</div>
+    
     </>
   );
 };
