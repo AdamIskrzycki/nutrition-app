@@ -1,5 +1,7 @@
 body {
-  background-color: #AEDAB7;
+  background: url("../img/background.jpg"); 
+  /* look for images on freepik.com */
+  background-size: cover;
 }
 
 .App {

@@ -30,6 +30,21 @@
 .SearchResult {
     border-radius: 5px;
     margin: 10px; 
-    border: 2px solid black;
+    border: 2px solid #fff;
     padding: 20px;    
+}
+
+.SearchButton {
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.InputContainer {
+    @include flexCenter(row);
+}
+
+.MealPlanContainer {
+    width: 100%;
+    @include flexCenter(row);
+    margin-bottom: 50px;
 }
