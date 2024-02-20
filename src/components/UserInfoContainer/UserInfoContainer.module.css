@@ -1,0 +1,10 @@
+.UserInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  margin: 70px auto;
+  width: 100%;
+}/*# sourceMappingURL=UserInfoContainer.module.css.map */

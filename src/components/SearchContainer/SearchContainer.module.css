@@ -1,0 +1,67 @@
+.SearchContainer {
+  width: 100%;
+}
+
+.Search {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  box-shadow: 10px 8px 18px -9px rgb(66, 68, 90);
+  width: 45%;
+}
+
+.SearchInvitation {
+  font-size: 40px;
+  width: 100%;
+  margin-top: 190px;
+}
+
+.SearchInvitationSHL {
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.SearchResultsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.SearchResult {
+  border-radius: 5px;
+  margin: 10px;
+  border: 2px solid #fff;
+  padding: 20px;
+}
+
+.SearchButton {
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.MealPlanContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=SearchContainer.module.css.map */

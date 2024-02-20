@@ -1,0 +1,72 @@
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.Info {
+  font-size: 26px;
+}
+
+.radioInput {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.NumberInput {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  box-shadow: 10px 8px 18px -9px rgb(66, 68, 90);
+  margin-left: 20px;
+  width: 150px;
+}
+
+.SelectInput {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  box-shadow: 10px 8px 18px -9px rgb(66, 68, 90);
+  width: 300px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.SelectInput option {
+  font-weight: bold;
+}
+
+.CalculateButton {
+  margin-top: 30px;
+  border: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  box-shadow: 10px 8px 18px -9px rgb(66, 68, 90);
+}
+
+.CalculateButton:hover {
+  transform: scale(1.15);
+  transition: transform 400ms ease;
+}/*# sourceMappingURL=Form.module.css.map */
