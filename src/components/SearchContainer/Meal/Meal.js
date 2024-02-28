@@ -4,7 +4,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
 const Meal = (props) => {
-  return (
+  return ( 
     <section className={classes.Meal}>
       <section className={classes.mealName}>{props.mealName}</section>
       {props.products.map((el) => {
@@ -12,7 +12,7 @@ const Meal = (props) => {
           <section className={classes.MealProduct}>
               <section className={classes.NameAmountContainer}>
                 <section className={classes.ProductName}>{el.name}</section>
-                <section>x{el.count}</section>
+                <section>x{props.currentProductCount}</section>
               </section>
               <section>
                 Serving size:{" "}
@@ -50,17 +50,15 @@ const Meal = (props) => {
                   {el.sugar_g} g
                 </span>
               </section>
-              <section className={classes.ButtonContainer}>
+              <section className={classes.ButtonContainer}> 
                 <AddIcon />
                 <RemoveIcon />
               </section>
-            
-            
           </section>
         );
       })}
     </section>
   );
-};
+}; // AddIcon and RemoveIcon don't work - fix
 
 export default Meal;
