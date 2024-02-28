@@ -7,12 +7,12 @@ const Meal = (props) => {
   return ( 
     <section className={classes.Meal}>
       <section className={classes.mealName}>{props.mealName}</section>
-      {props.products.map((el) => {
+      {Object.values(props.products).map((el) => {
         return (
           <section className={classes.MealProduct}>
               <section className={classes.NameAmountContainer}>
                 <section className={classes.ProductName}>{el.name}</section>
-                <section>x{props.currentProductCount}</section>
+                <section>x{el.amount}</section>
               </section>
               <section>
                 Serving size:{" "}
